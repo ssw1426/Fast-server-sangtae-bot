@@ -14,7 +14,7 @@ async def on_message(message):
     if message.content.startswith("!on"):
         await message.channel.send("@everyone")
         embed = discord.Embed(title="서버 온 안내", description="voice 서버가 열렸습니다. 즐거운 RP생활 되세요", color=0x62c1cc)
-        embed.add_field(name="다이렉트 주소", value="준비중", inline=False)
+        embed.add_field(name="다이렉트 주소", value="cfx.re/join/84ol95", inline=False)
         await message.channel.send(embed=embed)
     if message.content.startswith("!r"):
         await message.channel.send("@everyone")

@@ -14,7 +14,7 @@ async def on_message(message):
     if message.content.startswith("!on"):
         try:
             if message.author.guild_permissions.manage_messages:
-                await message.get_channe(l792978228275970109).send("@everyone")
+                await message.get_channel(l792978228275970109).send("@everyone")
                 embed = discord.Embed(title="서버 온 안내", description="List 서버가 열렸습니다. 즐거운 RP 되세요", color=0x62c1cc)
                 embed.add_field(name="다이렉트 주소", value="connect cfx.re/join/84ol95", inline=False)
                 await message.get_channel(l792978228275970109).send(embed=embed)

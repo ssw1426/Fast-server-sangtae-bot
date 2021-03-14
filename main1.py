@@ -30,7 +30,7 @@ async def on_message(message):
         try:
             if message.author.guild_permissions.manage_messages:
                 await message.channel.send("@everyone")
-                embed = discord.Embed(title="서버 리붓 안내", description="List 서버가 리붓되었습니다. 즐거운 RP 되세요", color=0xFFE400)
+                embed = discord.Embed(title="서버 리붓 안내", description="List 서버가 리붓됩니다. 즐거운 RP 되세요", color=0xFFE400)
                 await message.channel.send(embed=embed)
                 await message.delete()
                 await message.delete()

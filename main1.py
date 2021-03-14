@@ -15,7 +15,7 @@ async def on_message(message):
         try:
             if message.author.guild_permissions.manage_messages:
                 await message.channel.send("@everyone")
-                embed = discord.Embed(title="[FAST Server System ON", description="- 접속 후 서버 플레이에 지장이 있다면 DM 남겨주세요.", color=0x62c1cc)
+                embed = discord.Embed(title="[FAST Server System ON]", description="- 접속 후 서버 플레이에 지장이 있다면 DM 남겨주세요.", color=0x62c1cc)
                 embed.add_field(name="다이렉트 주소", value="connect cfx.re/join/m4ma39", inline=False)
                 embed.add_field(name="[ KOREA FAST RP Server ]", value="- 24시간 ON 상태 입니다. 열심히 노력하는 FAST RP Server 가 되도록하겠습니다.", inline=False)
                 await message.channel.send(embed=embed)

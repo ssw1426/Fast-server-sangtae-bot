@@ -15,7 +15,7 @@ async def on_ready():
 async def on_message(message):
     if message.content.startswith("!on"):
         try:
-            channel = l792978228275970109
+            channel = 792978228275970109
             if message.author.guild_permissions.manage_messages:
                 await message.get_channel(channel).send("@everyone")
                 embed = discord.Embed(title="서버 온 안내", description="List 서버가 열렸습니다. 즐거운 RP 되세요", color=0x62c1cc)
@@ -30,7 +30,7 @@ async def on_message(message):
 
     if message.content.startswith("!r"):
         try:
-            channel = l792978228275970109
+            channel = 792978228275970109
             if message.author.guild_permissions.manage_messages:
                 await message.get_channel(channel).send("@everyone")
                 embed = discord.Embed(title="서버 리붓 안내", description="List 서버가 리붓되었습니다. 즐거운 RP 되세요", color=0xFFE400)
@@ -43,7 +43,7 @@ async def on_message(message):
             pass
     if message.content.startswith("!off"):
         try:
-            channel = l792978228275970109
+            channel = 792978228275970109
             if message.author.guild_permissions.manage_messages:
                 await message.get_channel(channel).send("@everyone")
                 embed = discord.Embed(title="서버 오프 안내", description="서버 문제 및 패치로 서버가 닫혔습니다", color=0xff0000)

@@ -14,7 +14,8 @@ async def on_message(message):
     if message.content.startswith("!on"):
         try:
             if message.author.guild_permissions.manage_messages:
-                await message.channel.purge(limit=int[2:])
+                await message.channel.purge(limit=int(2))
+                await message.channel.purge(limit=int(2))
                 await message.channel.send("@everyone")
                 embed = discord.Embed(title="[ New World Server ON ]", description="🌍 New World 서버가 열였습니다. 어서 접속해 보세요!", color=0x62c1cc)
                 embed.add_field(name="[ Direct Address ]", value="준비중", inline=False)

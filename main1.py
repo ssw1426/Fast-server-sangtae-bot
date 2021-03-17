@@ -30,7 +30,7 @@ async def on_message(message):
         try:
             if message.author.guild_permissions.manage_messages:
                 await message.channel.send("@everyone")
-                embed = discord.Embed(title="[ FAST Server System REBOOT ]", description="🚧 New World 서버가 현재 리붓중입니다", color=0xFFE400)
+                embed = discord.Embed(title="[ New World Server REBOOT ]", description="🚧 New World 서버가 현재 리붓중입니다", color=0xFFE400)
                 embed.add_field(name="[ Direct Address ]", value="준비중", inline=False)
                 embed.add_field(name="[ New World RP Server ]", value="🌐 24시간 ON 상태 입니다. 항상 열심히 노력하는 New World Server 가 되도록하겠습니다.", inline=False)
                 await message.channel.send(embed=embed)

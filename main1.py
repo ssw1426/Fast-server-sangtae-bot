@@ -28,7 +28,7 @@ async def on_message(message):
         except:
             pass
 
-    if message.content.startswith("!re"):
+    if message.content.startswith("!r"):
         try:
             if message.author.guild_permissions.manage_messages:
                 await message.channel.purge(limit=int(2))

@@ -14,7 +14,6 @@ async def on_message(message):
     if message.content.startswith("!on"):
         try:
             if message.author.guild_permissions.manage_messages:
-                await message.channel.purge(limit=int(2))
                 await message.channel.send("@everyone")
                 embed = discord.Embed(title="[ New World Server ON ]", description="🌍 New World 서버가 열였습니다. 어서 접속해 보세요!", color=0x62c1cc)
                 embed.add_field(name="[ Direct Address ]", value="준비중", inline=False)
@@ -30,7 +29,6 @@ async def on_message(message):
     if message.content.startswith("!r"):
         try:
             if message.author.guild_permissions.manage_messages:
-                await message.channel.purge(limit=int(2))
                 await message.channel.send("@everyone")
                 embed = discord.Embed(title="[ New World Server REBOOT ]", description="🚧 New World 서버가 현재 리붓중입니다", color=0xFFE400)
                 embed.add_field(name="[ Direct Address ]", value="준비중", inline=False)
@@ -45,7 +43,6 @@ async def on_message(message):
     if message.content.startswith("!off"):
         try:
             if message.author.guild_permissions.manage_messages:
-                await message.channel.purge(limit=int(2))
                 await message.channel.send("@everyone")
                 embed = discord.Embed(title="[ New World Server OFF ]", description="🛑 현재 서버 문제 및 패치로 서버가 닫혔습니다. 오픈되면 들어와주세요", color=0xff0000)
                 embed.add_field(name="[ Direct Address ]", value="준비중", inline=False)
